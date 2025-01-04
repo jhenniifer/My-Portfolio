@@ -1,0 +1,47 @@
+:root{
+    --main-colour: rgb(207, 159, 255);
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 1.5em;
+}
+
+.nav__link__mobile__container{
+    list-style: none;
+    display: none;
+}
+
+.toggle__btn {
+    outline: none;
+}
+
+a{
+    color: initial;
+    transition: background-color .5s ease;
+}
+
+a:hover{
+    background-color: var(--main-colour);
+    padding: 5px;
+}
+
+.hero-title{
+    color:var(--main-colour);
+}
+
+.open{
+    display: block;
+}
+
