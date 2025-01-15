@@ -202,9 +202,10 @@ figcaption a{
 footer{
     background-color: var(--midnight-blue);
     color: var(--cool-white);
-    margin-left: -4em;
-    margin-right: -4em;
+    margin-left: -2em;
+    margin-right: -2em;
     padding: 1em 0 .3em 0;
+    font-size: 0.5em;
 }
 
 @media (min-width: 700px) and (max-width:990px) {
@@ -296,6 +297,11 @@ footer{
     .contact__info{
         align-content: center;
     }
+
+    footer{
+        margin-left: -4em;
+        margin-right: -4em;
+    }
   
 }
 
@@ -315,6 +321,10 @@ footer{
 
     .form__wrapper{
         width: 70%;
+    }
+
+    footer{
+        font-size: 1em;
     }
 
 }
