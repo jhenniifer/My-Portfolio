@@ -1,7 +1,7 @@
 :root{
     --main-colour: rgb(207, 159, 255);
     --substitute-colour: rgb(150, 123, 182);
-    --charcoal-gray: rgb(50, 50, 60);
+    /* --charcoal-gray: rgb(50, 50, 60); */
     --cool-white: rgb(245, 245, 255);
     --midnight-blue: rgb(35, 45, 85);
     --blush-pink: rgb(255, 203, 219);
@@ -15,7 +15,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: var(--font); 
-    color: var(--charcoal-gray);
+    color: var(--midnight-blue);
 }
 
 html{
@@ -23,7 +23,7 @@ html{
 }
 
 body{
-    margin: 2em;
+    margin: 2em 2em 0 2em;
     font-family: var(--font);
     background: var(--cool-white);
 }
@@ -87,7 +87,8 @@ a{
 }
 
 .about__head,
-.project__head{
+.project__head,
+.contact__head{
     color: var(--deep-purple);
     text-align: center;
     margin-bottom: 1em;
@@ -95,10 +96,10 @@ a{
 }
 
 .my__journey,
-.tech__stack__head{
+.tech__stack__head,
+.project__subhead{
     color: var(--main-colour);
     font-weight: 700;
-    text-align: center;
     margin-bottom: 1em;
 }
 
@@ -159,7 +160,7 @@ figcaption{
 figcaption a{
     font-size: 15px;
     text-decoration: none;
-    background-color: var(--charcoal-gray);
+    background-color: var(--midnight-blue);
     padding: 1em;
     border-radius: 16px;
     color: var(--cool-white);
@@ -178,6 +179,34 @@ figcaption a{
     background-color: var(--blush-pink);
 }
 
+.contact__container{
+    margin-top: 8em;
+}
+
+.contact__form{
+    background-color: rgb(239, 223, 255);
+}
+
+.form__btn{
+    background-color: var(--deep-purple);
+    padding: .7em 2em;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background-color.5s ease;
+}
+
+.form__btn:hover{
+    background-color: var(--main-colour);
+}
+
+footer{
+    background-color: var(--midnight-blue);
+    color: var(--cool-white);
+    margin-left: -4em;
+    margin-right: -4em;
+    padding: 1em 0 .3em 0;
+}
+
 @media (min-width: 700px) and (max-width:990px) {
     .hero__img{
         width: 50%;
@@ -188,12 +217,13 @@ figcaption a{
         display: flex;
         gap: 40px; 
     }
-  
+
+    
 }
 
 @media (min-width: 992px) {
     body{
-        margin: 4em 4em;
+        margin: 4em 4em 0 4em;
         font-size: 20px;
     }
 
@@ -251,6 +281,22 @@ figcaption a{
         grid-template-columns: repeat(2, 1fr);
         gap: 1.3rem;
     }
+
+    .contact{
+        display: flex;
+        justify-content: space-between;
+        gap: 2em;
+        max-width: 1500px;
+    }
+
+    .form__wrapper{
+        width: 55%;
+    }
+
+    .contact__info{
+        align-content: center;
+    }
+  
 }
 
 @media (min-width: 1200px){
@@ -260,6 +306,15 @@ figcaption a{
 
     .hero__text{
         margin: auto 0;
+    }
+
+    .about__container{
+        padding: 6em;
+        text-align: center;
+    }
+
+    .form__wrapper{
+        width: 70%;
     }
 
 }

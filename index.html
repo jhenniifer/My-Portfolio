@@ -22,21 +22,21 @@
                     <button class="toggle__btn btn"><i class="fa-solid fa-bars"></i></button>
                 </div>
                 <ul class="nav__link__mobile__container ps-0">
-                    <li><a href="index.html" class="nav__link text-decoration-none active" aria-current="page">Home</a></li>
-                    <li><a href="about.html" class="nav__link text-decoration-none">About</a></li>
-                    <li><a href="#" class="nav__link text-decoration-none">Skills</a></li>
-                    <li><a href="#" class="nav__link text-decoration-none">Projects</a></li>
-                    <li><a href="#" class="nav__link text-decoration-none">Contact</a></li>
+                    <li><a href="#hero" class="nav__link text-decoration-none active" aria-current="page">Home</a></li>
+                    <li><a href="#about" class="nav__link text-decoration-none">About</a></li>
+                    <li><a href="#skills" class="nav__link text-decoration-none">Skills</a></li>
+                    <li><a href="#projects" class="nav__link text-decoration-none">Projects</a></li>
+                    <li><a href="#contact" class="nav__link text-decoration-none">Contact</a></li>
                 </ul>
             </div>
             <div class="nav__desktop nav__items__desktop mt-5 d-none d-lg-flex justify-content-between align-items-center">
                 <div class="nav__logo"><b>JHENNIFER</b></div>
                 <ul class="nav__link__desktop__container ps-0 d-flex gap-3 gap-xl-4 pt-3">
-                    <li><a href="index.html" class="nav__link text-decoration-none active" aria-current="page">Home</a></li>
-                    <li><a href="about.html" class="nav__link text-decoration-none ">About</a></li>
-                    <li><a href="#" class="nav__link text-decoration-none ">Skills</a></li>
-                    <li><a href="#" class="nav__link text-decoration-none ">Projects</a></li>
-                    <li><a href="#" class="nav__link text-decoration-none ">Contact</a></li>
+                    <li><a href="#hero" class="nav__link text-decoration-none active" aria-current="page">Home</a></li>
+                    <li><a href="#about" class="nav__link text-decoration-none ">About</a></li>
+                    <li><a href="#skills" class="nav__link text-decoration-none ">Skills</a></li>
+                    <li><a href="#projects" class="nav__link text-decoration-none ">Projects</a></li>
+                    <li><a href="#contact" class="nav__link text-decoration-none ">Contact</a></li>
                 </ul>
             </div>
         </nav>
@@ -44,7 +44,7 @@
 
     <main>
 
-    <section class="hero__container mt-5 mb-5">
+    <section class="hero__container mt-5 mb-5" id="hero">
         <div class="hero__information d-lg-flex gap-lg-5">
             <img src="/assets/WhatsApp Image 2024-11-05 at 01.35.55_98046b73.jpg" class="hero__img img-fluid rounded" alt="My picture">
             <div class="hero__text ">
@@ -61,14 +61,14 @@
         </div> 
     </section>
 
-    <section class="about__container my-5">
+    <section class="about__container my-5" id="about">
         <h1 class="about__head">About Jennifer</h1>
         <div class="about__text">
             <p class="mb-4">
                 My name is Chukwuma Kosiso Jennifer. I am a Front-End Developer currently on a journey to master the art of creating beautiful, functional, and user-friendly websites. With a foundation in HTML, CSS, Bootstrap and growing skills in Javascript, I am building my portfolio one project at a time.
             </p>
             <p>
-                <h4 class="my__journey">MY JOURNEY INTO TECH</h4>
+                <h4 class="my__journey text-center">MY JOURNEY INTO TECH</h4>
                 Unlike most people, I didn’t always know I wanted to be a developer. My journey into tech began unexpectedly, i had a conversation with a mentor and it sparked my within me. I started my research and fell in-love with Front-End Development. I watched any and every tutorial on youtube to learn. To solidify my skills, I enrolled in a short-term front-end development program at <b>Genesys Tech hub</b>  and later graduated from another short program at <b>Pluralcode Academy</b>, where I honed my knowledge. These experiences equipped me with the tools to create functional and visually appealing websites.
 
                 Today, I’m on a continuous journey of learning and growth, working on real-world projects that showcase my creativity and passion for web development. I am currently enrolled as a Front-End Engineering Student at <b>AltSchool Africa</b> learning the foundations of Front-End development. 
@@ -77,8 +77,8 @@
                 When i am not coding, I am probably catching up on anime, reading manhwa or blasting my ears off with loud alternative pop.
             </p>
 
-            <div class="tech__stack__container">
-                <h4 class="tech__stack__head my-5">MY TECH STACK AND TOOLS</h4>
+            <div class="tech__stack__container" id="skills">
+                <h4 class="tech__stack__head my-5 text-center">MY TECH STACK AND TOOLS</h4>
                 <div class="tech__stack__icons text-center">
                     <div class="stack ">
                         <i class="fa-brands fa-html5"></i>
@@ -123,9 +123,13 @@
         </div>
     </section>
 
-    <section class="project__container my-5">
-        <h1 class="project__head">PROJECTS</h1>
-        <p class="project__text"></p>
+    <section class="project__container my-5" id="projects">
+        <h1 class="project__head text-center">PROJECTS</h1>
+        <h4 class="project__subhead text-center mb-3">Welcome to My Project Showcase!</h4>
+            <p class="project__text text-center mb-lg-5 mx-lg-5">
+                Here, you’ll find a curated selection of my personal projects that demonstrate my growing expertise and passion for front-end development. Each project is a clear reflection of my commitment to creating visually striking, responsive, and highly functional websites.
+                I actively experiment with new design techniques and continuously refine my coding abilities. These projects are a testament to my journey of growth and creativity.            
+            </p>
 
         <div class="projects">
             <figure class="vaultico">
@@ -179,7 +183,53 @@
 
     </section>
 
+    <section class="contact__container mb-5" id="contact">
+        <h1 class="contact__head text-center">CONNECT WITH ME</h1>
+        <div class="contact">
+        <div class="form__wrapper">
+        
+        <form action="" class="contact__form px-4 px-lg-5 py-4">
+            <h4 class="fw-bolder mb-3">About You</h4>
+            <div class="form-group mb-3">
+                <label for="name">Your name</label>
+                <input type="text" class="form-control" id="name" placeholder="John Doe" autocomplete="name" required>
+            </div>
+            <div class="form-group  mb-3">
+                <label for="email">Your email</label>
+                <input type="email" class="form-control" id="email" placeholder="johndoe@gmail.com" autocomplete="email" required>
+            </div>
+            <div class="form-group  mb-3">
+                <label for="message">General Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Hi Jennifer," required></textarea>
+            </div>
+            <button type="submit" class="btn form__btn text-white">Submit</button>
+            <p class="text-center my-3">I'll get back to you as soon as possible.</p>
+        </form>
+    </div>
+
+    <div class="contact__info mt-5 mt-lg-0">
+        <h3 class="mb-3 fw-bolder">Contact Me</h3>
+        <div class="contact__icon d-flex gap-3">
+            <i class="fa-solid fa-phone-volume"></i>
+            <p>+234 907 954 7018</p>
+        </div>
+        <div class="contact__icon d-flex gap-3">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Abuja, Nigeria.</p>
+        </div>
+        <div class="contact__icon d-flex gap-3">
+            <i class="fa-solid fa-envelope"></i>
+            <p>chukwumakosisochukwu7@gmail.com</p>
+        </div>
+
+    </div>
+    </div>
+    </section>
 </main>
+
+<footer class="text-center border-top ">
+    Built From Scratch with <i class="fa-solid fa-heart"></i> &copy; Copyright 2025  All Rights Reserved
+</footer>
     
 </body>
 </html>
