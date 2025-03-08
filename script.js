@@ -7,7 +7,7 @@ hamBurger.addEventListener('click',function(){
     if(icon.classList.contains('fa-bars')){
         icon.classList.replace('fa-bars', 'fa-x');
     } else{
-        icon.classList.replace('fa-x', 'fa-bar');
+        icon.classList.replace('fa-x', 'fa-bars');
     }
     
 })
